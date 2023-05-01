@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{  margin: 0;
+    padding: 0;}
+
+/* Variaveis */
+:root{
+    /* Variaveis de Cor */
+    --cor-primaria : #37306B;
+    --cor-secundaria : #312A5E;
+    --cor-tercearia : #D27685;
+    --cor-quartearia : #ffffff;
+
+    /* Variaveis de Fonte */
+    --font-primaria : 'Press Start 2P', cursive;
+    --font-secundaria : 'Roboto Mono', monospace;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-tercearia);
+
+    box-sizing: border-box;
+}
+.titulo-destaque{
+    color: var(--cor-quartearia);
+}
+
+/* ===================================== */
+.apresentacao{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 6% 1.5% 15% ;
+    gap : 82px;
+} 
+.apresentacao_conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+}
+
+/* --------------------------- */
+.apresentacao_conteudo_titulo{
+    font-family: var(--font-primaria);
+    font-size: 2.25rem;
+}
+.apresentacao_conteudo_texto{
+    font-family: var(--font-secundaria);
+    font-size: 1.2rem ;
+}
+/* --------------------------- */
+.apresentacao_links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-right: 2%;
+    gap: 32px;
+}
+.apresentacao_links_subtitulo{
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.apresentacao_links_navegacao{
+    color: var(--cor-quartearia);
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+    border: dashed var(--cor-tercearia);
+    border-radius: 16px;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px 0;
+    gap: 16px;
+}
+/* --------------------------- */
+.apresentacao_links_navegacao:hover{
+    background-color: var(--cor-secundaria); 
+}
+/* ===================================== */
+
+.imagens_icon{
+    width: 30px;
+}
+.arte_da_programadora{
+    border-radius: 100%;
+    border: solid var(--cor-tercearia);
+    border-width: 3rem;
+        
+    width: 50% ;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.rodade{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-tercearia);
+
+    padding: 1.5%;
+    text-align: center;
+    
+    font-family: var(--font-secundaria);
+    font-size: 0.8rem;
+}
+
+
+.cabecalho{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-tercearia);
+
+    padding: 2% 1% 1% 15%;
+    
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho_menu_link{
+    text-decoration: none;
+    color: var(--cor-tercearia);
+
+}
+
+.apresentacao_conteudo_texto a{
+    text-decoration: none;
+    color: var(--cor-quartearia)
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 4% 2% 2% 10%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 4%;
+    }
+    .apresentacao_conteudo{
+        width: auto;
+    }
+}
